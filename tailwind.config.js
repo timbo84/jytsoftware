@@ -51,7 +51,7 @@ module.exports = {
 						opacity: "0%",
 					},
 					"100%": {
-						opacity: "100%",
+						opacity: "85%",
 					},
 				},
 				"fade-left": {
@@ -93,12 +93,12 @@ module.exports = {
 						opacity: "0%",
 					},
 					"80%": {
-						opacity: "100%",
+						opacity: "85%",
 					},
 
 					"100%": {
 						"line-height": "100%",
-						opacity: "100%",
+						opacity: "85%",
 					},
 				},
 			},
