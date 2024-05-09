@@ -31,7 +31,7 @@ const socials = [
         height={460}
       />
     ),
-    href: "https://timothy-roberts.vercel.app",
+    href: "https://www.linkedin.com/in/yissellucia/",
     label: "Software Developer | Graphic Designer",
     handle: "Yissel Nunez",
     bio: "I am Yissel Nunez, a software developer with a flair for graphic design and a co-founder of JYTSoftware Development & Designs. My passion for technology is deeply intertwined with my role as a mother, and I take pride in juggling both with grace. I stand firm in my values of loyalty and integrity, and when I set my sights on an objective, I commit to it fully, ensuring that every goal I chase is met with success through steadfast dedication and effort.",
