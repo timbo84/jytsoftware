@@ -5,7 +5,7 @@ import Particles from "./components/particles";
 const navigation = [
   { name: "Meet The Founders", href: "/developers" },
   { name: "About", href: "/about" },
-//   { name: "Projects", href: "/projects" },
+  //   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -30,7 +30,7 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={5000}
       />
-	  
+
       <h1 className="z-10 text-xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         JYT Software
       </h1>
@@ -43,9 +43,12 @@ export default function Home() {
         <h2 className="text-3xl font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">
           JYT Software: "Jumpstart Your Tomorrow, Today!"
         </h2>
+        <div className="flex justify-center items-center pt-12 pb-24">
+          <button className="bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-700 hover:to-yellow-700 text-white font-bold py-2 px-4 rounded shadow-md">
+            <a href="/contact">Contact us Today!</a>
+          </button>
+        </div>
       </div>
     </div>
-
-	
   );
 }
