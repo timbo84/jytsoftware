@@ -6,9 +6,9 @@ export default function AboutPage() {
   return (
     <div className="relative pb-16">
       <Navigation />
-      <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+      <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 xs:space-y-16 xs:pt-24 sm:space-y-16 sm:pt-24 md:space-y-16 md:pt-24 lg:space-y-16 lg:pt-24">
         <div className="max-w-2xl mx-auto lg:mx-0">
-          <h1 className="text-3xl font-bold tracking-tight  sm:text-4xl bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">
+          <h1 className="text-3xl font-bold tracking-tight  sm:text-4xl bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text xs:from-red-300 xs:to-yellow-300 sm:from-red-300 sm:to-yellow-300 md:from-red-500 md:to-yellow-500">
             WHAT WE'RE ABOUT
           </h1>
           
@@ -65,13 +65,16 @@ export default function AboutPage() {
         </button>
       </div>
 
-      <Image
+      <div className="flex justify-center items-center">
+        <Image
         className="px-6 pt-16 mx-auto space-y-8 max-w-xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32 rounded"
         src="/companylogo.png"
         alt="An image showing JYT"
         width={900}
         height={900}
       />
+      </div>
+      
     </div>
   );
 }

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "jytsoftware.com",
     template: "%s | jytsoftware.com",
   },
-  description: "Cofounder and Software engineer at jytsoftware",
+  description: "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
   openGraph: {
     title: "jytsoftware.com",
     description: "Cofounder and Software engineer at jytsoftware",
