@@ -3,7 +3,7 @@ import "../global.css";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
-import MetaPixel from "./components/metapixel";
+// import MetaPixel from "./components/metapixel";
 
 export const metadata: Metadata = {
   title: {
@@ -64,7 +64,7 @@ export default function RootLayout({
     <html lang="en" className={[calSans.variable].join(" ")}>
       <head>
         <Analytics />
-        <MetaPixel pixelId={1825631221277187}/>
+        {/* <MetaPixel pixelId={1825631221277187}/> */}
       </head>
       <body
         className={`bg-black ${
