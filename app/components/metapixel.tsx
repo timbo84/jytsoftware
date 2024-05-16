@@ -10,7 +10,7 @@ interface MetaPixelProps {
 
 const MetaPixel: React.FC<MetaPixelProps> = ({ pixelId }) => {
   const pathname = usePathname();
-  const [searchParams] = useSearchParams();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     // Trigger a page view on route change
