@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { Linkedin } from "lucide-react";
-import { Instagram } from "lucide-react";
-import { Facebook } from "lucide-react";
-import { Mail } from "lucide-react";
+// import { Linkedin } from "lucide-react";
+// import { Instagram } from "lucide-react";
+// import { Facebook } from "lucide-react";
+// import { Mail } from "lucide-react";
 import Particles from "./components/particles";
 
 const navigation = [
@@ -13,32 +13,32 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-const socials = [
-  {
-    icon: <Facebook size={20} />,
-    href: "https://www.facebook.com/profile.php?id=61559267145709&mibextid=ZbWKwL",
-    label: "FaceBook",
-    handle: "JYTSoftware",
-  },
-  {
-    icon: <Instagram size={20} />,
-    href: "https://instagram.com/jytsoftware",
-    label: "Instagram",
-    handle: "JYTSoftware",
-  },
-  {
-    icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/company/jyt-software-development-designs",
-    label: "LinkedIn",
-    handle: "JYTSoftware",
-  },
-  {
-    icon: <Mail size={20} />,
-    href: "mailto:timothy.roberts@jytsoftware.com",
-    label: "Email",
-    handle: "@jytsoftware.com",
-  },
-];
+// const socials = [
+//   {
+//     icon: <Facebook size={20} />,
+//     href: "https://www.facebook.com/profile.php?id=61559267145709&mibextid=ZbWKwL",
+//     label: "FaceBook",
+//     handle: "JYTSoftware",
+//   },
+//   {
+//     icon: <Instagram size={20} />,
+//     href: "https://instagram.com/jytsoftware",
+//     label: "Instagram",
+//     handle: "JYTSoftware",
+//   },
+//   {
+//     icon: <Linkedin size={20} />,
+//     href: "https://www.linkedin.com/company/jyt-software-development-designs",
+//     label: "LinkedIn",
+//     handle: "JYTSoftware",
+//   },
+//   {
+//     icon: <Mail size={20} />,
+//     href: "mailto:timothy.roberts@jytsoftware.com",
+//     label: "Email",
+//     handle: "@jytsoftware.com",
+//   },
+// ];
 
 export default function Home() {
   return (
@@ -79,7 +79,7 @@ export default function Home() {
             <a href="/contact">Contact us Today!</a>
           </button>
         </div>
-        <nav className=" animate-fade-in">
+        {/* <nav className=" animate-fade-in">
           <ul className="flex items-center justify-center gap-8">
             {socials.map((s) => (
               <Link
@@ -93,7 +93,7 @@ export default function Home() {
               </Link>
             ))}
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </div>
   );
