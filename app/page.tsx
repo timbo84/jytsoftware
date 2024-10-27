@@ -80,7 +80,7 @@ export default function Home() {
         </h2>
         <p className="text-m text-white">
           All websites are built from the ground up to provide you with full
-          control over the designs. We do not use third-party website templates
+          control over the designs and functionalities. We do not use third-party website templates
           unless it is your specific request.
         </p>
         <div className="flex justify-center items-center pt-12 pb-24">

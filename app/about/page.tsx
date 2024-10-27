@@ -11,9 +11,7 @@ export default function AboutPage() {
           <h1 className="text-3xl font-bold tracking-tight  sm:text-4xl bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text xs:from-red-300 xs:to-yellow-300 sm:from-red-300 sm:to-yellow-300 md:from-red-500 md:to-yellow-500">
             WHAT WE'RE ABOUT
           </h1>
-          
         </div>
-        
       </div>
       <div className="w-full h-px bg-zinc-800" />
       <Particles
@@ -64,17 +62,6 @@ export default function AboutPage() {
           <a href="/contact">Contact us Today!</a>
         </button>
       </div>
-
-      <div className="flex justify-center items-center">
-        <Image
-        className="px-6 pt-16 mx-auto space-y-8 max-w-xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32 rounded"
-        src="/companylogo.png"
-        alt="An image showing JYT"
-        width={900}
-        height={900}
-      />
-      </div>
-      
     </div>
   );
 }
