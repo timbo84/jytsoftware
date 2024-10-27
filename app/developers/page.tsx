@@ -55,8 +55,8 @@ const socials = [
 
 export default function Example() {
   return (
-    <div className="relative ">
-      <div className=" bg-gradient-to-r from-zinc-300/0 via-zinc-700/50 to-zinc-300/0">
+    <div className="relative">
+      <div className="bg-gradient-to-r from-zinc-300/0 via-zinc-700/50 to-zinc-300/0">
         <Navigation />
         <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
           <div className="max-w-2xl mx-auto lg:mx-0">
@@ -67,18 +67,17 @@ export default function Example() {
         </div>
         <div className="w-full h-px bg-zinc-800" />
       </div>
-      <div className=" bg-gradient-to-r from-zinc-300/0 via-zinc-700/50 to-zinc-300/0">
-        {/* <Navigation /> */}
+      <div className="bg-gradient-to-r from-zinc-300/0 via-zinc-700/50 to-zinc-300/0">
         <div>
-          <div className="grid w-full grid-cols-3 gap-8 mt-32 sm:mt-32 sm:grid-cols-3 lg:gap-16">
-            {socials.map((s) => (
-              <Card>
+          <div className="grid w-full grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mt-32 sm:mt-32 lg:gap-16">
+            {socials.map((s, index) => (
+              <Card key={index}>
                 <Link
                   href={s.href}
                   target="_blank"
-                  className="flex flex-col items-center justify-center  group"
+                  className="flex flex-col items-center justify-center group"
                 >
-                  <span className=" ">{s.image}</span>
+                  <span className="">{s.image}</span>
                   <div className="z-10 flex flex-col items-center">
                     <span className="text-xl font-medium duration-100 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
                       {s.handle}
