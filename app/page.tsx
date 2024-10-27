@@ -2,6 +2,10 @@
 
 import Link from "next/link";
 import React from "react";
+// import { Linkedin } from "lucide-react";
+// import { Instagram } from "lucide-react";
+// import { Facebook } from "lucide-react";
+// import { Mail } from "lucide-react";
 import Particles from "./components/particles";
 
 const navigation = [
@@ -10,6 +14,33 @@ const navigation = [
   //   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];
+
+// const socials = [
+//   {
+//     icon: <Facebook size={20} />,
+//     href: "https://www.facebook.com/profile.php?id=61559267145709&mibextid=ZbWKwL",
+//     label: "FaceBook",
+//     handle: "JYTSoftware",
+//   },
+//   {
+//     icon: <Instagram size={20} />,
+//     href: "https://instagram.com/jytsoftware",
+//     label: "Instagram",
+//     handle: "JYTSoftware",
+//   },
+//   {
+//     icon: <Linkedin size={20} />,
+//     href: "https://www.linkedin.com/company/jyt-software-development-designs",
+//     label: "LinkedIn",
+//     handle: "JYTSoftware",
+//   },
+//   {
+//     icon: <Mail size={20} />,
+//     href: "mailto:timothy.roberts@jytsoftware.com",
+//     label: "Email",
+//     handle: "@jytsoftware.com",
+//   },
+// ];
 
 export default function Home() {
   return (
@@ -20,7 +51,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-700 bg-clip-text"
+              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text xs:from-red-300 xs:to-yellow-300 xs:hover:text-yellow-300 sm:from-red-300 sm:to-yellow-300 sm:hover:text-yellow-300 md:from-red-500 md:to-yellow-500 md:hover:text-yellow-300"
             >
               {item.name}
             </Link>
@@ -44,7 +75,7 @@ export default function Home() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-3xl font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">
+        <h2 className="text-3xl font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text xs:from-red-300 xs:to-yellow-300 sm:from-red-300 sm:to-yellow-300 md:from-red-500 md:to-yellow-500">
           JYT Software: "Jumpstart Your Tomorrow, Today!"
         </h2>
         <p className="text-m text-white">

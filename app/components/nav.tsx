@@ -30,26 +30,26 @@ export const Navigation: React.FC = () => {
           <div className="flex justify-between gap-8">
             <Link
               href="/developers"
-              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text"
+              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text xs:from-red-300 xs:to-yellow-300 xs:hover:text-yellow-300 sm:from-red-300 sm:to-yellow-300 sm:hover:text-yellow-300 md:from-red-500 md:to-yellow-500 md:hover:text-yellow-300"
             >
               Meet The Founders
             </Link>
             <Link
               href="/about"
-              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text"
+              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text xs:from-red-300 xs:to-yellow-300 xs:hover:text-yellow-300 sm:from-red-300 sm:to-yellow-300 sm:hover:text-yellow-300 md:from-red-500 md:to-yellow-500 md:hover:text-yellow-300"
             >
               About
             </Link>
 
             {/* <Link
 							href="/projects"
-							className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text"
+							className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text xs:from-red-300 xs:to-yellow-300 xs:hover:text-yellow-300 sm:from-red-300 sm:to-yellow-300 sm:hover:text-yellow-300 md:from-red-500 md:to-yellow-500 md:hover:text-yellow-300"
 						>
 							Projects
 						</Link> */}
             <Link
               href="/contact"
-              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text"
+              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text xs:from-red-300 xs:to-yellow-300 xs:hover:text-yellow-300 sm:from-red-300 sm:to-yellow-300 sm:hover:text-yellow-300 md:from-red-500 md:to-yellow-500 md:hover:text-yellow-300"
             >
               Contact
             </Link>
@@ -57,9 +57,9 @@ export const Navigation: React.FC = () => {
 
           <Link
             href="/"
-            className="duration-200 text-zinc-300 hover:text-zinc-100"
+            className="duration-200 text-red-500 hover:text-yellow-500"
           >
-            <Home className="w-6 h-6 " />
+            <Home className="w-8 h-8 " />
           </Link>
         </div>
       </div>

@@ -11,5 +11,6 @@ export function Analytics() {
       data-token={token}
       async
     />
+    
   );
 }

@@ -16,10 +16,10 @@ const socials = [
         height={460}
       />
     ),
-    href: "https://timothy-roberts.vercel.app",
-    label: "Software Developer | Superstar",
+    href: "https://sites.google.com/view/josephellis/home",
+    label: "Software Developer | AppDev",
     handle: "Joesph Ellis",
-    bio: "At the heart of JYT Software lies a commitment to not just building websites, but nurturing lasting relationships. Founded on the principles of integrity and high moral standards, we, a team of dedicated professionals led by a passionate coder, strive to solve the most daunting of challenges. Our founder, a man of unwavering resolve, excels in turning obstacles into opportunities. His life, enriched by the joys of fatherhood to three wonderful children and partnership with his beloved wife Bernice, reflects the same dedication and love that he extends to every client and project. JYT Software stands as a testament to his belief that true success is built on a foundation of strong values and enduring bonds.",
+    bio: "I am Joseph Ellis, an amazing father of two, and a devoted husband whose heart is as committed to my family as my mind is to coding. In the world of software development, I am known for my fiery passion for front-end design and my comprehensive full-stack capabilities. I face every problem with the courage of a warrior, never backing down until I’ve seen it through. My dedication to my craft is unwavering, a trait that I carry into my personal life, where I am not just a partner but a true complement to my spouse, enhancing our lives together with the same love and attention to detail that I give to my code.",
   },
   {
     image: (
@@ -31,10 +31,10 @@ const socials = [
         height={460}
       />
     ),
-    href: "https://timothy-roberts.vercel.app",
+    href: "https://www.linkedin.com/in/yissellucia/",
     label: "Software Developer | Graphic Designer",
     handle: "Yissel Nunez",
-    bio: "At the heart of JYT Software lies a commitment to not just building websites, but nurturing lasting relationships. Founded on the principles of integrity and high moral standards, we, a team of dedicated professionals led by a passionate coder, strive to solve the most daunting of challenges. Our founder, a man of unwavering resolve, excels in turning obstacles into opportunities. His life, enriched by the joys of fatherhood to three wonderful children and partnership with his beloved wife Bernice, reflects the same dedication and love that he extends to every client and project. JYT Software stands as a testament to his belief that true success is built on a foundation of strong values and enduring bonds.",
+    bio: "I am Yissel Nunez, a software developer with a flair for graphic design and a co-founder of JYTSoftware Development & Designs. My passion for technology is deeply intertwined with my role as a mother, and I take pride in juggling both with grace. I stand firm in my values of loyalty and integrity, and when I set my sights on an objective, I commit to it fully, ensuring that every goal I chase is met with success through steadfast dedication and effort.",
   },
   {
     image: (
@@ -58,9 +58,9 @@ export default function Example() {
     <div className="relative">
       <div className="bg-gradient-to-r from-zinc-300/0 via-zinc-700/50 to-zinc-300/0">
         <Navigation />
-        <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+        <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 xs:space-y-16 xs:pt-24 sm:space-y-16 sm:pt-24 md:space-y-16 md:pt-24 lg:space-y-16 lg:pt-24">
           <div className="max-w-2xl mx-auto lg:mx-0">
-            <h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+            <h1 className="text-3xl font-bold tracking-tight  sm:text-4xl bg-gradient-to-r from-red-500 to-yellow-500  text-transparent bg-clip-text xs:from-red-300 xs:to-yellow-300 sm:from-red-300 sm:to-yellow-300 md:from-red-500 md:to-yellow-500">
               THE FOUNDERS
             </h1>
           </div>

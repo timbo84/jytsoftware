@@ -6,6 +6,7 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Linkedin } from "lucide-react";
 import { Instagram } from "lucide-react";
+import { Facebook } from "lucide-react";
 import Particles from "../components/particles";
 
 const socials = [
@@ -13,7 +14,7 @@ const socials = [
     icon: <Linkedin size={20} />,
     href: "https://www.linkedin.com/company/jyt-software-development-designs",
     label: "LinkedIn",
-    handle: "@JYTSoftware",
+    handle: "JYTSoftware",
   },
   {
     icon: <Mail size={20} />,
@@ -24,8 +25,14 @@ const socials = [
   {
     icon: <Instagram size={20} />,
     href: "https://instagram.com/jytsoftware",
-    label: "instagram",
-    handle: "jytsoftware",
+    label: "Instagram",
+    handle: "JYTSoftware",
+  },
+  {
+    icon: <Facebook size={20} />,
+    href: "https://www.facebook.com/profile.php?id=61559267145709&mibextid=ZbWKwL",
+    label: "FaceBook",
+    handle: "JYTSoftware",
   },
 ];
 

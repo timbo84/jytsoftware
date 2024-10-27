@@ -1,18 +1,19 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
+// import MetaPixel from "./components/metapixel";
 
 export const metadata: Metadata = {
   title: {
     default: "jytsoftware.com",
     template: "%s | jytsoftware.com",
   },
-  description: "Cofounder and Software engineer at jytsoftware",
+  description: "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
   openGraph: {
     title: "jytsoftware.com",
-    description: "Cofounder and Software engineer at jytsoftware",
+    description: "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
     url: "https://jytsoftware.com",
     siteName: "jytsoftware.com",
     images: [
@@ -41,13 +42,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.jpg",
   },
 };
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter",
+// });
 
 const calSans = LocalFont({
   src: "../public/fonts/CalSans-SemiBold.ttf",
@@ -60,9 +61,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="en" className={[calSans.variable].join(" ")}>
       <head>
         <Analytics />
+        {/* <MetaPixel pixelId={1825631221277187}/> */}
       </head>
       <body
         className={`bg-black ${
