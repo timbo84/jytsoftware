@@ -93,7 +93,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <a
               href="mailto:timothy.roberts@jytsoftware.com?subject=Portfolio%20Website%20Inquiry"
-              className="card flex flex-col items-center text-center p-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg shadow-lg"
+              className="card flex flex-col items-center text-center p-4 bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-lg shadow-lg"
             >
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-black">
                 <span className="text-xl line-through">$599</span> $199
@@ -139,7 +139,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <a
               href="mailto:timothy.roberts@jytsoftware.com?subject=Custom%20Website%20Inquiry"
-              className="card flex flex-col items-center text-center p-4 bg-gradient-to-r from-teal-500 to-cyan-500 p-2 rounded-lg shadow-lg"
+              className="card flex flex-col items-center text-center p-4 bg-gradient-to-r from-orange-500 to-red-500 p-2 rounded-lg shadow-lg"
             >
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-black">
                 <span className="text-xl line-through">$1499</span> $699
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center md:items-start">
             <a
               href="mailto:timothy.roberts@jytsoftware.com?subject=Premium%20Website%20Inquiry"
-              className="card flex flex-col items-center text-center p-4 bg-gradient-to-r from-blue-500 to-green-500 p-2 rounded-lg shadow-lg"
+              className="card flex flex-col items-center text-center p-4 bg-gradient-to-r from-red-500 to-yellow-500 p-2 rounded-lg shadow-lg"
             >
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-black">
                 <span className="text-xl line-through">$1999</span> $999
