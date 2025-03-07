@@ -7,7 +7,7 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "jytsoftware.com",
+    default: "JYT Software",
     template: "%s | jytsoftware.com",
   },
   description: "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
