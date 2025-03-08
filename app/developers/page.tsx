@@ -100,10 +100,10 @@ export default function Example() {
           </div>
         </div>
       </div>
-      <Particles
+      {/* <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={5000}
-      />
+      /> */}
     </div>
   );
 }

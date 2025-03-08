@@ -14,10 +14,10 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="w-full h-px bg-zinc-800" />
-      <Particles
+      {/* <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={5000}
-      />
+      /> */}
 
       <p className=" text-zinc-400 px-6 pt-16 mx-auto space-y-2 max-w-7xl ">
         At <strong>JYT Software</strong>, we believe that the foundation of a
