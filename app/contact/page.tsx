@@ -40,6 +40,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
   const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
+  // Check for undefined values and throw an error if any are missing
   if (!serviceID || !templateID || !userID) {
     console.error("Missing EmailJS configuration.");
     alert("Email service is not properly configured. Please try again later.");
@@ -60,23 +61,19 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     // Send email using EmailJS
     const res = await emailjs.send(serviceID, templateID, emailParams, userID);
 
-    // Check EmailJS response text to confirm success
+    // Check response text to confirm success
     if (res.text === "OK") {
       alert("Email sent successfully!");
-      e.currentTarget.reset(); // Reset the form
-      return; // End the function here to prevent further execution
+      
+    } else {
+      console.error("Failed to send email:", res);
+      alert("Error sending email. Please try again later.");
     }
-
-    // If res.text !== "OK", handle as an unexpected error
-    console.error("Unexpected response from EmailJS:", res);
-    alert("Unexpected error occurred. Please try again later.");
   } catch (error) {
-    // Handle any errors from emailjs.send()
     console.error("Error sending email:", error);
     alert("Error sending email. Please try again later.");
   }
 };
-
 
 
 
