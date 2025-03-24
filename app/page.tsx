@@ -3,41 +3,51 @@
 import Link from "next/link";
 import React from "react";
 import { Linkedin, Instagram, Facebook, Mail } from "lucide-react";
-import Particles from "./components/particles";
 import OfferGrid from "./components/offerCards";
 import { motion } from "framer-motion";
-import TestimonialSliders from "./components/testimonials";
 import ProjectShowcase from "./components/projectShowcase";
 
 const navigation = [
-  { name: "Meet The Founders", href: "/developers" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 
 const socials = [
   {
-    icon: <Facebook size={24} />,
+    icon: <Facebook size={36} />,
     href: "https://www.facebook.com/JYTSoftware",
   },
-  { icon: <Instagram size={24} />, href: "https://instagram.com/jytsoftware" },
+  { icon: <Instagram size={36} />, href: "https://instagram.com/jytsoftware" },
   {
-    icon: <Linkedin size={24} />,
+    icon: <Linkedin size={36} />,
     href: "https://www.linkedin.com/company/jyt-software-development-designs",
   },
-  { icon: <Mail size={24} />, href: "mailto:timothy.roberts@jytsoftware.com" },
+  { icon: <Mail size={36} />, href: "mailto:timothy.roberts@jytsoftware.com" },
 ];
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-6">
+    <div className="relative min-h-screen">
+      {/* Video Background */}
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        src="/tech.mp4"
+        autoPlay
+        muted
+        loop
+      ></video>
+
+      {/* Overlay to enhance text readability */}
+      <div className="absolute inset-0 bg-black/50 -z-10"></div>
+
+      {/* Navigation Bar */}
+      <nav className="mb-16 animate-fade-in">
+        <ul className="flex items-center justify-center gap-6 mt-4">
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text"
+              className="text-lg font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text px-4 py-2"
             >
               {item.name}
             </Link>
@@ -45,21 +55,17 @@ export default function Home() {
         </ul>
       </nav>
 
-      {/* <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={5000}
-      /> */}
-
+      {/* Content Section */}
       <div className="flex flex-col items-center justify-center flex-grow">
-        <h1 className="z-10 text-xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+        <h1 className="z-10 text-xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
           JYT Software
         </h1>
-        <h1 className="z-10 text-xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+        <h1 className="z-10 text-xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
           Development & Designs
         </h1>
       </div>
 
-      <div className="my-16 text-center animate-fade-in">
+      <div className="mt-16 text-center animate-fade-in">
         <h2 className="text-3xl font-semibold bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">
           JYT Software: "Jumpstart Your Tomorrow, Today!"
         </h2>
@@ -97,9 +103,10 @@ export default function Home() {
             </button>
           </a>
         </motion.div>
+
         <ProjectShowcase />
-        <OfferGrid />
-        {/* <TestimonialSliders /> */}
+        {/* <OfferGrid /> */}
+        {/* TestimonialSliders can be added here */}
       </div>
     </div>
   );
