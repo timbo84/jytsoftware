@@ -48,17 +48,21 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   }
 
   try {
-    // Retrieve form data
-    const formData = {
-      name: e.currentTarget.user_name.value,
-      email: e.currentTarget.user_email.value,
-      message: e.currentTarget.message.value,
+    // Use FormData to retrieve values from the form
+    const formData = new FormData(e.currentTarget);
+
+    // Create the data object to send to EmailJS
+    const emailParams = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      message: formData.get("message") as string,
     };
 
     // Send email using EmailJS
-    const res = await emailjs.send(serviceID, templateID, formData, userID);
+    const res = await emailjs.send(serviceID, templateID, emailParams, userID);
 
-    if (res.status === 200) {
+    // Check response text to confirm success
+    if (res.text === "OK") {
       alert("Email sent successfully!");
       e.currentTarget.reset(); // Reset the form
     } else {
@@ -70,6 +74,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     alert("Error sending email. Please try again later.");
   }
 };
+
 
 
 export default function ContactPage() {
