@@ -32,20 +32,27 @@ const socials = [
   },
 ];
 
-const handleSubmit = async (e: any) => {
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
-  // Use environment variables for sensitive keys
-  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  // Ensure environment variables are properly defined
+  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+  const userID = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
+
+  // Check for undefined values and throw an error if any are missing
+  if (!serviceID || !templateID || !userID) {
+    console.error("Missing EmailJS configuration.");
+    alert("Email service is not properly configured. Please try again later.");
+    return;
+  }
 
   try {
     // Retrieve form data
     const formData = {
-      name: e.target.user_name.value,
-      email: e.target.user_email.value,
-      message: e.target.message.value,
+      user_name: e.currentTarget.user_name.value,
+      user_email: e.currentTarget.user_email.value,
+      message: e.currentTarget.message.value,
     };
 
     // Send email using EmailJS
@@ -53,8 +60,9 @@ const handleSubmit = async (e: any) => {
 
     if (res.status === 200) {
       alert("Email sent successfully!");
-      e.target.reset(); // Clear the form after success
+      e.currentTarget.reset(); // Reset the form
     } else {
+      console.error("Failed to send email:", res);
       alert("Error sending email. Please try again later.");
     }
   } catch (error) {
@@ -62,6 +70,7 @@ const handleSubmit = async (e: any) => {
     alert("Error sending email. Please try again later.");
   }
 };
+
 
 export default function ContactPage() {
   return (
@@ -132,7 +141,7 @@ export default function ContactPage() {
           <textarea
             name="message"
             placeholder="Your Message"
-            rows="4"
+            rows={4}
             className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
           ></textarea>
           <button
