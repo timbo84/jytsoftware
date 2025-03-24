@@ -8,15 +8,15 @@ const projects = [
     title: "Evince",
     description:
       "A one-user blog platform designed for distraction-free writing and deeper audience connection through personalized expression.",
-    techStack: ["Next.js", "Tailwind CSS", "Node.js"],
+    techStack: ["Next.js", "React", "Node.js", "Supabase"],
     image: "/evince.png",
     link: "https://www.danlemaire.com/",
   },
   {
     title: "KyKy Fitness",
     description:
-      "A cutting-edge personal training website featuring AI-powered real-time fitness guidance, interactive tools like a macro calculator and workout planner, and an intuitive, mobile-friendly design for seamless user engagement.",
-    techStack: ["React", "Vercel", "Tailwind CSS"],
+      "A cutting-edge personal training website featuring interactive tools like a macro calculator and workout planner, and an intuitive, mobile-friendly design for seamless user engagement.",
+    techStack: ["React", "Vercel", "Next.js"],
     image: "/KyKyFitness.png",
     link: "https://kyfitness.vercel.app/",
   },
