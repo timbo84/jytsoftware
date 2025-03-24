@@ -50,8 +50,8 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   try {
     // Retrieve form data
     const formData = {
-      user_name: e.currentTarget.user_name.value,
-      user_email: e.currentTarget.user_email.value,
+      name: e.currentTarget.user_name.value,
+      email: e.currentTarget.user_email.value,
       message: e.currentTarget.message.value,
     };
 
@@ -128,21 +128,24 @@ export default function ContactPage() {
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <input
             type="text"
-            name="user_name"
+            name="name"
             placeholder="Your Name"
             className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            required
           />
           <input
             type="email"
-            name="user_email"
+            name="email"
             placeholder="Your Email"
             className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            required
           />
           <textarea
             name="message"
             placeholder="Your Message"
             rows={4}
             className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            required
           ></textarea>
           <button
             type="submit"
