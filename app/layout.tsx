@@ -4,6 +4,7 @@ import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 // import MetaPixel from "./components/metapixel";
+import Footer from '@/app/components/footer'
 
 export const metadata: Metadata = {
   title: {
@@ -72,6 +73,7 @@ export default function RootLayout({
         }`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

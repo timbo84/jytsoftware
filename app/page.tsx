@@ -15,7 +15,7 @@ const navigation = [
 const socials = [
   {
     icon: <Facebook size={36} />,
-    href: "https://www.facebook.com/JYTSoftware",
+    href: "https://www.facebook.com/profile.php?id=61559267145709&mibextid=ZbWKwL",
   },
   { icon: <Instagram size={36} />, href: "https://instagram.com/jytsoftware" },
   {
@@ -67,7 +67,7 @@ export default function Home() {
 
       <div className="mt-16 text-center animate-fade-in">
         <h2 className="text-3xl font-semibold bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">
-          JYT Software: "Jumpstart Your Tomorrow, Today!"
+          JYT Software: "Jumpstart Your Tomorrow!"
         </h2>
         <p className="text-m text-white">
           All websites are built from the ground up to provide you with full
