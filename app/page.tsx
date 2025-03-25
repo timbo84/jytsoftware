@@ -56,7 +56,7 @@ export default function Home() {
       </nav>
 
       {/* Content Section */}
-      <div className="flex flex-col items-center justify-center flex-grow">
+      <div className="flex flex-col items-center justify-center flex-grow relative z-10">
         <h1 className="z-10 text-xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
           JYT Software
         </h1>

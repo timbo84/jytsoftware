@@ -8,3 +8,16 @@
   }
 } 
 
+/* Disable scrolling on the body */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Ensure modal content can scroll */
+.modal-content {
+  overflow-y: auto;
+}
+
+.z-10 {
+  z-index: 0; /* Keep it lower than the modal's z-index (e.g., z-50) */
+}
