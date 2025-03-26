@@ -11,7 +11,7 @@ const founders = [
   {
     name: "Timothy Roberts",
     label: "Founder & Sole Proprietor | Software Developer",
-    image: "/tim-cool2.jpg",
+    image: "/tim1.jpg",
     bio: "Timothy Roberts is the sole proprietor of JYT Software, driven by integrity and a passion for web development. Tim leads with innovation in web development and digital marketing, crafting impactful digital experiences.",
     // Link replaced with modal functionality
   },
@@ -84,13 +84,13 @@ export default function AboutPage() {
         >
           Meet The Founder
         </motion.h2>
-        <div className="flex flex-col items-center mt-12 bg-black/50 rounded-lg shadow-lg p-6">
+        <div className="flex flex-col items-center bg-black/50 rounded-lg shadow-lg p-6">
           <Image
             src={founders[0].image}
             alt={`Profile picture of ${founders[0].name}`}
-            width={200}
-            height={200}
-            className="rounded-full"
+            width={600}
+            height={500}
+            className="rounded"
           />
           <h3 className="text-xl font-bold text-yellow-400 mt-4">{founders[0].name}</h3>
           <p className="text-sm text-zinc-400">{founders[0].label}</p>

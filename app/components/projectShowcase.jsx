@@ -23,7 +23,7 @@ const projects = [
     title: "KyKy Fitness",
     description:
       "A cutting-edge personal training website featuring interactive tools like a macro calculator and workout planner, and an intuitive, mobile-friendly design for seamless user engagement.",
-    techStack: ["React", "Vercel", "Next.js"],
+    techStack: ["React", "Vercel", "Next.js", "3rd Party API"],
     image: "/KyKyFitness.png",
     images: [
       "/kyky1.png",
