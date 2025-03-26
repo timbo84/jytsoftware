@@ -33,7 +33,7 @@ const projects = [
       "/kyky5.png",
     ], // Multiple images for modal
     videoUrl: "https://youtube.com/embed/CKRBL2rCqpM",
-    link: "https://kyfitness.vercel.app/",
+    link: "https://kykyfitness.com/",
   },
 ];
 
