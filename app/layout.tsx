@@ -1,20 +1,20 @@
 import "../global.css";
-// import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
-// import MetaPixel from "./components/metapixel";
-import Footer from '@/app/components/footer'
+import Footer from "@/app/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
     default: "JYT Software",
     template: "%s | jytsoftware.com",
   },
-  description: "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
+  description:
+    "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
   openGraph: {
     title: "jytsoftware.com",
-    description: "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
+    description:
+      "Jumpstart Your Tomorrow Today! JYT Software, We build more than just websites, we build relationships.",
     url: "https://jytsoftware.com",
     siteName: "jytsoftware.com",
     images: [
@@ -46,10 +46,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.jpg",
   },
 };
-// const inter = Inter({
-//   subsets: ["latin"],
-//   variable: "--font-inter",
-// });
+
 
 const calSans = LocalFont({
   src: "../public/fonts/CalSans-SemiBold.ttf",
@@ -63,15 +60,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={[calSans.variable].join(" ")}>
-      <head>
-        <Analytics />
-        {/* <MetaPixel pixelId={1825631221277187}/> */}
-      </head>
+      <head></head>
       <body
         className={`bg-black ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined
         }`}
       >
+        <Analytics />
         {children}
         <Footer />
       </body>

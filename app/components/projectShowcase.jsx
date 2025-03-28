@@ -16,7 +16,7 @@ const projects = [
       "3rd Party API",
       "AI Integration",
     ],
-    image: "/KyKyFitness1.png",
+    image: "/kyky6.jpg",
     images: [
       "/kyky1.png",
       "/kyky2.png",
