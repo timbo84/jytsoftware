@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { Linkedin, Instagram, Facebook, Mail } from "lucide-react";
+import { Linkedin, Instagram, Facebook, Mail, Youtube } from "lucide-react";
 import OfferGrid from "./components/offerCards";
 import { motion } from "framer-motion";
 import ProjectShowcase from "./components/projectShowcase";
@@ -22,7 +22,10 @@ const socials = [
     icon: <Linkedin size={36} />,
     href: "https://www.linkedin.com/company/jyt-software-development-designs",
   },
-  { icon: <Mail size={36} />, href: "mailto:timothy.roberts@jytsoftware.com" },
+  {
+    icon: <Youtube size={36} />,
+    href: "https://www.youtube.com/@JYTSoftware",
+  },
 ];
 
 export default function Home() {

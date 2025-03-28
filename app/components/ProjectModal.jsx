@@ -44,7 +44,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 
         <div className="p-6 space-y-6">
           <h2 className="text-2xl font-bold">{project.title}</h2>
-          <p className="text-gray-300">{project.description}</p>
+          <p className="text-gray-300 text-left">{project.description1}</p>
 
           {/* Embedded Video */}
           {project.videoUrl && (
