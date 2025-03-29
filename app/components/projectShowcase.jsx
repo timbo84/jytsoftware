@@ -68,7 +68,7 @@ const projects = [
       "/fortsill7.png",
     ], // Multiple images for modal
     videoUrl: "",
-    link: "https://fortsill.vercel.app/",
+    link: "http://lfsokalumnaedeltas.org/",
   },
 ];
 
