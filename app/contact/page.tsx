@@ -1,5 +1,5 @@
 "use client";
-import { Mail, Linkedin, Instagram, Facebook } from "lucide-react";
+import { Linkedin, Instagram, Facebook, Youtube } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -13,12 +13,6 @@ const socials = [
     handle: "JYTSoftware",
   },
   {
-    icon: <Mail size={28} />,
-    href: "mailto:timothy.roberts@jytsoftware.com",
-    label: "Email",
-    handle: "@jytsoftware.com",
-  },
-  {
     icon: <Instagram size={28} />,
     href: "https://instagram.com/jytsoftware",
     label: "Instagram",
@@ -29,6 +23,12 @@ const socials = [
     href: "https://www.facebook.com/profile.php?id=61559267145709&mibextid=ZbWKwL",
     label: "Facebook",
     handle: "JYTSoftware",
+  },
+  {
+    icon: <Youtube size={28} />,
+    href: "https://www.youtube.com/@JYTSoftware",
+    label: "Youtube",
+    handle: "@JYTSoftware",
   },
 ];
 

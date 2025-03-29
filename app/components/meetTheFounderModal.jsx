@@ -30,6 +30,12 @@ export default function MeetFounderModal({ isOpen, onClose }) {
           >
             X
           </button>
+          <button
+            onClick={onClose}
+            className="sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+          >
+            ← Back
+          </button>
 
           {/* Images Section */}
           <div className="grid grid-cols-4 gap-4">
