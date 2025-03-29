@@ -34,6 +34,13 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         exit={{ x: "100%" }}
         transition={{ duration: 0.5 }}
       >
+
+        <button
+          onClick={onClose}
+          className="absolute top-4 left-4 sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+        >
+          ← Back
+        </button>
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -73,6 +80,12 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             ))}
           </div>
         )}
+        <button
+          onClick={onClose}
+          className="sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+        >
+          ← Back
+        </button>
       </motion.div>
 
       {/* Enlarged Image */}
@@ -84,6 +97,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
+          
           <img
             src={selectedImage}
             alt="Enlarged"
@@ -95,6 +109,12 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           >
             X
           </button>
+          <button
+          onClick={onClose}
+          className="absolute top-4 left-4 sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+        >
+          ← Back
+        </button>
         </motion.div>
       )}
     </>
