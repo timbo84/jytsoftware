@@ -110,7 +110,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             X
           </button>
           <button
-          onClick={onClose}
+          onClick={() => setSelectedImage(null)}
           className="absolute top-4 left-4 sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
         >
           ← Back
