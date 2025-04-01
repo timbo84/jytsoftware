@@ -18,19 +18,12 @@ export default function Footer() {
 
         {/* Quick Links */}
         <nav className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
-          <a href="/about" className="hover:text-yellow-400 transition duration-300">
-            About Us
-          </a>
-          <a href="/contact" className="hover:text-yellow-400 transition duration-300">
-            Contact
-          </a>
-          {/* <a href="/services" className="hover:text-yellow-400 transition duration-300">
-            Services
-          </a>
-          <a href="/portfolio" className="hover:text-yellow-400 transition duration-300">
-            Portfolio
-          </a> */}
-        </nav>
+      <a href="/about" className="hover:text-yellow-400 transition duration-300">About Us</a>
+      <a href="/privacy-policy" className="hover:text-yellow-400 transition duration-300">Privacy Policy</a>
+      <a href="/terms-of-use" className="hover:text-yellow-400 transition duration-300">Terms of Use</a>
+      <a href="/contact" className="hover:text-yellow-400 transition duration-300">Contact</a>
+    </nav>
+
 
         {/* Social Media Icons */}
         <div className="flex space-x-4">

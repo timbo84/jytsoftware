@@ -5,9 +5,9 @@ export default function MeetFounderModal({ isOpen, onClose }) {
 
   const images = [
     "/timothy-profile.jpg",
-    "/timothy-coding.jpg",
-    "/timothy-speaker.jpg",
-    "/timothy-team.jpg",
+    "/timothy-family.jpg",
+    "/timothy-wife.jpg",
+    "/timothy-viking.png",
   ];
 
   return (

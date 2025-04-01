@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
 import { Linkedin, Instagram, Facebook, Mail, Youtube } from "lucide-react";
 import OfferGrid from "./components/offerCards";
 import { motion } from "framer-motion";
 import ProjectShowcase from "./components/projectShowcase";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -29,6 +30,17 @@ const socials = [
 ];
 
 export default function Home() {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const logoSize = windowWidth <= 992 ? 50 : 125;
+
   return (
     <div className="relative min-h-screen">
       {/* Video Background */}
@@ -45,6 +57,12 @@ export default function Home() {
 
       {/* Navigation Bar */}
       <nav className="mb-16 animate-fade-in">
+        <Image
+          src="/jytLogo.png"
+          alt="jyt logo"
+          width={logoSize}
+          height={logoSize}
+        />
         <ul className="flex items-center justify-center gap-6 mt-4">
           {navigation.map((item) => (
             <Link
