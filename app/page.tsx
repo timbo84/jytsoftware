@@ -58,7 +58,7 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="mb-16 animate-fade-in">
         <Image
-          src="/jytLogo.png"
+          src="/newJYT.png"
           alt="jyt logo"
           width={logoSize}
           height={logoSize}
