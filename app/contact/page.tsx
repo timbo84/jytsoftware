@@ -5,6 +5,12 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import emailjs from "emailjs-com";
 
+export const metadata = {
+  title: "Contact Us | JYT Software", 
+  description:
+    "Get in touch with JYT Software for web development and digital marketing services. Reach out via our contact form or social media.",
+};
+
 const socials = [
   {
     icon: <Linkedin size={28} />,
