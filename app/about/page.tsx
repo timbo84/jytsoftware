@@ -7,10 +7,11 @@ import Particles from "../components/particles";
 import MeetFounderModal from "@/app/components/meetTheFounderModal"; // Import the modal component
 import { useState } from "react";
 
-export const metdata = {
+export const metadata: Record<string, string> = {
   title: "About Us | JYT Software",
   description:
-    "Discover the story behind JYT Software, a web development company dedicated to Jumpstarting Your Tomorrow. Learn about our mission, vision, and the founder's journey.",}
+    "Discover the story behind JYT Software, a web development company dedicated to Jumpstarting Your Tomorrow. Learn about our mission, vision, and the founder's journey.",
+};
 
 const founders = [
   {
