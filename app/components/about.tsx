@@ -3,7 +3,6 @@
 import { Navigation } from "../components/nav";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Particles from "../components/particles";
 import MeetFounderModal from "@/app/components/meetTheFounderModal"; // Import the modal component
 import { useState } from "react";
 
