@@ -4,6 +4,30 @@ import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
+    title: "Social Event Rentals",
+    description:
+      "Social Event Rentals provides chic, interactive event experiences through photo booths, 360° cam experiences, glam booths, floral arches, snack carts, and more. They specialize in delivering memorable, customizable touches to weddings, corporate events, and parties.",
+    description1:
+      "Social Event Rentals is a full-service event rental company that delivers premium, interactive experiences tailored for weddings, corporate events, and private parties. The website was built to highlight their wide range of services—including photo booths, 360° experiences, glam booths, floral arches, and snack carts—through an elegant, modern design that balances professionalism with fun. The platform emphasizes simplicity and engagement, featuring immersive hero imagery, modular service sections, and consistent calls to action that guide visitors toward booking or inquiries. By integrating client testimonials, responsive layouts, and an intuitive navigation flow, the site builds trust while ensuring a seamless browsing experience across devices. Developed with a focus on usability and conversion, the project not only enhances the company’s online presence but also stands as a polished showcase of design and development expertise. Every detail—from typography to component structure—was crafted to create a memorable brand impression and support the client’s goal of turning event moments into unforgettable experiences.",
+    techStack: [
+      "React",
+      "Vercel",
+      "Next.js",
+    ],
+    image: "/ser.png",
+    images: [
+      "/ser1.jpg",
+      "/ser2.jpg",
+      "/ser3.jpg",
+      "/ser4.jpg",
+      "/ser5.jpg",
+      "/ser6.jpg",
+      "/ser7.jpg",
+    ], // Multiple images for modal
+    videoUrl: "",
+    link: "https://www.socialeventrentalsne.com/",
+  },
+  {
     title: "KyKy Fitness",
     description:
       "A cutting-edge personal training website featuring interactive tools like an AI chatbot powered by OpenAI, macro calculator and workout planner, and an intuitive, mobile-friendly design for seamless user engagement.",

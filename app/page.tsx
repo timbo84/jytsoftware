@@ -57,12 +57,12 @@ export default function Home() {
 
       {/* Navigation Bar */}
       <nav className="mb-16 animate-fade-in">
-        <Image
+        {/* <Image
           src="/newJYT.png"
           alt="jyt logo"
           width={logoSize}
           height={logoSize}
-        />
+        /> */}
         <ul className="flex items-center justify-center gap-6 mt-4">
           {navigation.map((item) => (
             <Link
