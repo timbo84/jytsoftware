@@ -115,7 +115,7 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <Image
-              src="/jytlogo.png"
+              src="/jytLogo.png"
               alt="JYT Software Logo"
               width={350}
               height={350}
