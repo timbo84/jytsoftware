@@ -69,7 +69,7 @@ export default function TestimonialCarousel() {
             <ChevronLeft size={24} />
           </button>
 
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={current}
               initial={{ opacity: 0, x: 50 }}
