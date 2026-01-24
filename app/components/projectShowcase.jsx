@@ -1,203 +1,142 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
     title: "Social Event Rentals",
+    location: "Nebraska",
     description:
-      "Social Event Rentals provides chic, interactive event experiences through photo booths, 360° cam experiences, glam booths, floral arches, snack carts, and more. They specialize in delivering memorable, customizable touches to weddings, corporate events, and parties.",
+      "Premium event rental website showcasing photo booths, 360° experiences, and custom event services.",
     description1:
-      "Social Event Rentals is a full-service event rental company that delivers premium, interactive experiences tailored for weddings, corporate events, and private parties. The website was built to highlight their wide range of services—including photo booths, 360° experiences, glam booths, floral arches, and snack carts—through an elegant, modern design that balances professionalism with fun. The platform emphasizes simplicity and engagement, featuring immersive hero imagery, modular service sections, and consistent calls to action that guide visitors toward booking or inquiries. By integrating client testimonials, responsive layouts, and an intuitive navigation flow, the site builds trust while ensuring a seamless browsing experience across devices. Developed with a focus on usability and conversion, the project not only enhances the company’s online presence but also stands as a polished showcase of design and development expertise. Every detail—from typography to component structure—was crafted to create a memorable brand impression and support the client’s goal of turning event moments into unforgettable experiences.",
-    techStack: [
-      "React",
-      "Vercel",
-      "Next.js",
-    ],
+      "Social Event Rentals is a full-service event rental company that delivers premium, interactive experiences tailored for weddings, corporate events, and private parties. The website was built to highlight their wide range of services—including photo booths, 360° experiences, glam booths, floral arches, and snack carts—through an elegant, modern design that balances professionalism with fun...",
+    techStack: ["React", "Next.js", "Vercel"],
     image: "/ser.png",
-    images: [
-      "/ser1.jpg",
-      "/ser2.jpg",
-      "/ser3.jpg",
-      "/ser4.jpg",
-      "/ser5.jpg",
-      "/ser6.jpg",
-      "/ser7.jpg",
-    ], // Multiple images for modal
+    images: ["/ser1.jpg", "/ser2.jpg", "/ser3.jpg"],
     videoUrl: "",
     link: "https://www.socialeventrentalsne.com/",
   },
   {
     title: "KyKy Fitness",
+    location: "Texas",
     description:
-      "A cutting-edge personal training website featuring interactive tools like an AI chatbot powered by OpenAI, macro calculator and workout planner, and an intuitive, mobile-friendly design for seamless user engagement.",
+      "Modern fitness platform with AI chatbot, macro calculator, and workout planner.",
     description1:
-      "Introducing our innovative fitness website, designed to transform how personal trainers connect with their clients.\n\nBuilt using Next.js, Bootstrap, and Supabase, this platform combines sleek design with advanced functionality to deliver a seamless experience.\n\nAt its core is a custom AI chatbot powered by OpenAI, providing real-time fitness guidance to users and ensuring personalized support at every step.\n\nInteractive tools such as a macro calculator, workout planner, and personalized meal plan generator take user engagement to the next level, empowering clients to achieve their fitness goals with precision.\n\nThe website's responsive, mobile-friendly layout, complemented by clear CTAs and a sticky navigation bar, ensures accessibility across devices while maintaining a polished and professional look.\n\nThis website isn't just a tool—it's a fitness partner, redefining the way trainers and clients interact in the digital space. Step into the future of fitness with a platform built to inspire and support every journey.",
-    techStack: [
-      "React",
-      "Vercel",
-      "Next.js",
-      "3rd Party API",
-      "AI Integration",
-    ],
+      "A cutting-edge fitness website designed to enhance trainer-client interaction through AI-driven guidance, interactive tools, and responsive design...",
+    techStack: ["Next.js", "React", "AI Integration", "Supabase"],
     image: "/kyky6.jpg",
-    images: [
-      "/kyky1.png",
-      "/kyky2.png",
-      "/kyky3.png",
-      "/kyky4.png",
-      "/kyky5.png",
-    ], // Multiple images for modal
+    images: ["/kyky1.png", "/kyky2.png", "/kyky3.png"],
     videoUrl: "https://youtube.com/embed/CKRBL2rCqpM",
     link: "https://kykyfitness.com/",
   },
   {
     title: "Evince",
+    location: "California",
     description:
-      "A one-user blog platform designed for distraction-free writing and deeper audience connection through personalized expression.",
+      "Custom single-author blogging platform focused on distraction-free writing.",
     description1:
-      "Evince is a custom-built blogging platform designed exclusively for an individual author to provide a distraction-free writing experience tailored to their unique style and needs. Unlike traditional multi-user platforms, Evince focuses on personalization and simplicity, enabling the author to express their thoughts and stories without the complexities of shared environments. Built with a deep understanding of the author's vision, it prioritizes ease of use and a seamless interface to foster creativity and meaningful audience connections. The platform empowers the author with features such as real-time editing, responsive design, and intuitive publishing tools, ensuring their work is beautifully presented across all devices. Personalization options allow for a blog layout that reflects the author’s distinctive voice, while built-in analytics provide insights into reader engagement to refine their content strategy. By combining cutting-edge technologies like Next.js, React, and Supabase, Evince guarantees high performance and reliability, making it a trusted platform for impactful storytelling.",
-      techStack: ["Next.js", "React", "Node.js", "Search Query","Supabase"],
+      "Evince is a custom-built blogging platform designed exclusively for an individual author...",
+    techStack: ["Next.js", "React", "Supabase"],
     image: "/evince.png",
-    images: [
-      "/evince1.png",
-      "/evince2.png",
-      "/evince3.png",
-      "/evince4.png",
-      "/evince5.png",
-    ], // Multiple images for modal
+    images: ["/evince1.png", "/evince2.png"],
     videoUrl: "https://www.youtube.com/embed/BIyPOTFl_ZY",
     link: "https://www.danlemaire.com/",
   },
   {
-    title: "Delta Sigma Theta Sorority, Inc",
+    title: "Delta Sigma Theta Sorority, Inc.",
+    location: "Oklahoma",
     description:
-      "",
-    description1:
-      "",
-    techStack: [
-      "React",
-      "Vercel",
-      "Next.js",
-      "Supabase",
-    ],
+      "Organization website built to support communication, events, and community engagement.",
+    description1: "",
+    techStack: ["Next.js", "React", "Supabase", "Vercel"],
     image: "/fortsill.png",
-    images: [
-      "/fortsill1.png",
-      "/fortsill2.png",
-      "/fortsill3.png",
-      "/fortsill4.png",
-      "/fortsill5.png",
-      "/fortsill6.png",
-      "/fortsill7.png",
-    ], // Multiple images for modal
+    images: ["/fortsill1.png", "/fortsill2.png"],
     videoUrl: "",
     link: "http://lfsokalumnaedeltas.org/",
   },
 ];
 
 export default function ProjectShowcase() {
-  const [selectedProjectIndex, setSelectedProjectIndex] = useState(0); // Keep track of active project
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
-
-  const nextProject = () => {
-    setSelectedProjectIndex((prevIndex) => (prevIndex + 1) % projects.length); // Loop through projects
-  };
+  const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="flex flex-col items-center text-center p-6 bg-black/50 rounded-lg shadow-lg w-full max-w-3xl mx-auto">
-      <h2 className="text-3xl font-semibold text-white mb-4">
+    <section className="py-24 px-6 max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold text-center text-white mb-16">
         Featured Projects
       </h2>
 
-      {/* Project Showcase */}
-      <div className="relative w-full">
-        <AnimatePresence mode="wait">
+      {/* Card Grid */}
+      <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project, index) => (
           <motion.div
-            key={selectedProjectIndex}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
-            className="p-4"
-          >
-            {/* Project Image */}
-            <img
-              src={projects[selectedProjectIndex].image}
-              alt={projects[selectedProjectIndex].title}
-              className="w-full h-full object-fit rounded-lg shadow-md"
-            />
-            {/* Project Title */}
-            <h3 className="text-xl text-yellow-400 mt-4 font-bold">
-              {projects[selectedProjectIndex].title}
-            </h3>
-            {/* Project Description */}
-            <p className="text-white mt-2">
-              {projects[selectedProjectIndex].description}
-            </p>
-            {/* Technology Stack */}
-            <ul className="flex justify-center gap-2 mt-2 text-sm text-gray-300">
-              {projects[selectedProjectIndex].techStack.map((tech, index) => (
-                <li key={index} className="px-2 py-1 bg-gray-700 rounded">
-                  {tech}
-                </li>
-              ))}
-            </ul>
-
-            <button
-              className="mt-4 inline-block text-yellow-400 hover:underline"
-              onClick={openModal}
-            >
-              Discover More →
-            </button>
-            <br />
-
-            <a
-              href={projects[selectedProjectIndex].link}
-              className="mt-4 inline-block text-yellow-400 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visit Website →
-            </a>
-          </motion.div>
-        </AnimatePresence>
-      </div>
-
-      {/* Project Navigation */}
-      <div className="flex justify-center gap-4 mt-4">
-        {projects.map((_, index) => (
-          <button
             key={index}
-            onClick={() => setSelectedProjectIndex(index)}
-            className={`w-3 h-3 rounded-full ${
-              selectedProjectIndex === index ? "bg-yellow-400" : "bg-gray-500"
-            }`}
-          ></button>
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.3 }}
+            className="bg-black/60 rounded-xl overflow-hidden shadow-lg border border-white/10"
+          >
+            {/* Image */}
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover"
+            />
+
+            {/* Card Content */}
+            <div className="p-6 text-white space-y-4">
+              <div>
+                <h3 className="text-xl font-bold">{project.title}</h3>
+                <p className="text-sm text-gray-400">
+                  📍 {project.location}
+                </p>
+              </div>
+
+              <p className="text-gray-300 text-sm">
+                {project.description}
+              </p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2">
+                {project.techStack.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs px-2 py-1 bg-gray-700 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Actions */}
+              <div className="flex justify-between items-center pt-4">
+                <button
+                  onClick={() => setSelectedProject(project)}
+                  className="text-yellow-400 hover:underline text-sm"
+                >
+                  Discover More →
+                </button>
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-400 hover:underline text-sm"
+                >
+                  Visit Website →
+                </a>
+              </div>
+            </div>
+          </motion.div>
         ))}
       </div>
 
-      {/* Next Project Button */}
-      <motion.button
-        onClick={nextProject} // Navigate to the next project
-        className="mt-6 bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-700 hover:to-yellow-700 text-white font-bold py-2 px-4 rounded shadow-md"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        Next Project ➡️
-      </motion.button>
-
       {/* Modal */}
-      {isModalOpen && (
+      {selectedProject && (
         <ProjectModal
-          isOpen={isModalOpen}
-          onClose={closeModal}
-          project={projects[selectedProjectIndex]} // Pass the currently selected project
+          isOpen={!!selectedProject}
+          onClose={() => setSelectedProject(null)}
+          project={selectedProject}
         />
       )}
-    </div>
+    </section>
   );
 }

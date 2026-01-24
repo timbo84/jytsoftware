@@ -1,5 +1,5 @@
 import "../global.css";
-import LocalFont from "@next/font/local";
+import LocalFont from "next/font/local";
 import { Metadata } from "next";
 import Footer from "@/app/components/footer";
 import { Analytics } from "@vercel/analytics/react";
@@ -59,12 +59,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[calSans.variable].join(" ")}>
-      <head></head>
+    <html lang="en" className={[calSans.variable].join(" ")} style={{ colorScheme: 'light' }}>
+      <head>
+        <meta name="color-scheme" content="light only" />
+      </head>
       <body
         className={`bg-black ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined
         }`}
+        style={{ colorScheme: 'light' }}
       >
         <Analytics />
         {children}

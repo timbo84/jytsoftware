@@ -3,8 +3,37 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: light only !important;
+  }
+
+  html {
+    color-scheme: light !important;
+  }
+
+  body {
+    color-scheme: light !important;
+  }
+
   .text-edge-outline {
     -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+  }
+
+  /* Force color consistency regardless of dark mode */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Override any dark mode color adjustments */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light !important;
+  }
+
+  html, body {
+    color-scheme: light !important;
   }
 } 
 
