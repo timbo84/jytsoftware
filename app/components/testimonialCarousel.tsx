@@ -52,7 +52,7 @@ export default function TestimonialCarousel() {
     <section className="py-24 px-6 bg-zinc-900">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-12 text-center" style={{
-          background: 'linear-gradient(to right, #ef4444, #eab308)',
+          background: 'linear-gradient(to right, #22d3ee, #3b82f6)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text'
@@ -113,7 +113,7 @@ export default function TestimonialCarousel() {
               key={index}
               onClick={() => setCurrent(index)}
               className={`h-2 rounded-full transition-all ${
-                index === current ? "w-8 bg-yellow-500" : "w-2 bg-gray-600"
+                index === current ? "w-8 bg-cyan-400" : "w-2 bg-gray-600"
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />

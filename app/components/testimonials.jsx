@@ -42,13 +42,13 @@ export default function TestimonialsSlider() {
             className="p-4"
           >
             <p className="text-lg text-white italic">"{testimonials[index].quote}"</p>
-            <h3 className="text-yellow-400 mt-2 font-bold">- {testimonials[index].name}, {testimonials[index].company}</h3>
+            <h3 className="text-cyan-400 mt-2 font-bold">- {testimonials[index].name}, {testimonials[index].company}</h3>
           </motion.div>
         </AnimatePresence>
       </div>
       <button
         onClick={nextTestimonial}
-        className="mt-4 bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-700 hover:to-yellow-700 text-white font-bold py-2 px-4 rounded shadow-md"
+        className="mt-4 bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-600 hover:to-amber-500 text-white font-bold py-2 px-4 rounded shadow-md"
       >
         Next
       </button>

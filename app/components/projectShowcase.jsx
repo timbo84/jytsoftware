@@ -4,6 +4,19 @@ import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
+    title: "TTC (Task to Close)",
+    location: "Texas",
+    description:
+      "All-in-one transaction coordination platform that keeps real estate agents on top of every closing — tasks, deadlines, contacts, and clients in one place.",
+    description1:
+      "Task to Close (TTC) is a custom-built dashboard that helps real estate agents manage the entire closing process from contract to close. Agents get a daily task list tied to each property and client, a color-coded calendar tracking critical milestones and option-period deadlines, a full client pipeline sortable by closing date, and guided checklists for buyer, seller, and combined transactions — complete with a saved directory of title companies, lenders, and inspectors. Each task can trigger a pre-filled email or text straight to the client, pulling in the property, closing date, and a ready-to-send buyer checklist, so follow-ups go out in seconds instead of being written from scratch. Built to keep every transaction structured and nothing falling through the cracks.",
+    techStack: ["Next.js"],
+    image: "/ttc2.png",
+    images: ["/ttc1.png", "/ttc3.png", "/ttc4.png", "/ttc5.png", "/ttc6.png", "/ttc7.png", "/ttc10.png", "/ttc8.png", "/ttc9.png"],
+    videoUrl: "",
+    link: "https://ttc-lyart.vercel.app",
+  },
+  {
     title: "Social Event Rentals",
     location: "Nebraska",
     description:
@@ -27,7 +40,7 @@ const projects = [
     image: "/kyky6.jpg",
     images: ["/kyky1.png", "/kyky2.png", "/kyky3.png"],
     videoUrl: "https://youtube.com/embed/CKRBL2rCqpM",
-    link: "https://kykyfitness.com/",
+    link: "kyfitness.vercel.app",
   },
   {
     title: "Evince",
@@ -110,7 +123,7 @@ export default function ProjectShowcase() {
               <div className="flex justify-between items-center pt-4">
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="text-yellow-400 hover:underline text-sm"
+                  className="text-cyan-400 hover:underline text-sm"
                 >
                   Discover More →
                 </button>
@@ -119,7 +132,7 @@ export default function ProjectShowcase() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-yellow-400 hover:underline text-sm"
+                  className="text-cyan-400 hover:underline text-sm"
                 >
                   Visit Website →
                 </a>

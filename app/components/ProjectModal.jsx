@@ -37,14 +37,14 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 
         <button
           onClick={onClose}
-          className="absolute top-4 left-4 sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+          className="absolute top-4 left-4 sm:hidden bg-zinc-800 text-white p-2 rounded-full hover:bg-cyan-500 transition duration-300"
         >
           ← Back
         </button>
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white hover:text-yellow-400 text-xl font-bold"
+          className="absolute top-4 right-4 text-white hover:text-cyan-400 text-xl font-bold"
         >
           X
         </button>
@@ -82,7 +82,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         )}
         <button
           onClick={onClose}
-          className="sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+          className="sm:hidden bg-zinc-800 text-white p-2 rounded-full hover:bg-cyan-500 transition duration-300"
         >
           ← Back
         </button>
@@ -105,13 +105,13 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           />
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute top-4 right-4 text-white hover:text-yellow-400 text-xl font-bold"
+            className="absolute top-4 right-4 text-white hover:text-cyan-400 text-xl font-bold"
           >
             X
           </button>
           <button
           onClick={() => setSelectedImage(null)}
-          className="absolute top-4 left-4 sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+          className="absolute top-4 left-4 sm:hidden bg-zinc-800 text-white p-2 rounded-full hover:bg-cyan-500 transition duration-300"
         >
           ← Back
         </button>

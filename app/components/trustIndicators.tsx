@@ -22,14 +22,14 @@ export default function TrustIndicators() {
           {badges.map((badge, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center justify-center p-6 rounded-lg bg-black/40 border border-white/10 hover:border-yellow-500/50 transition-all"
+              className="flex flex-col items-center justify-center p-6 rounded-lg bg-black/40 border border-white/10 hover:border-cyan-400/50 transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
-              <div className="text-yellow-500 mb-2">{badge.icon}</div>
+              <div className="text-cyan-400 mb-2">{badge.icon}</div>
               <span className="text-white text-sm font-medium">{badge.label}</span>
             </motion.div>
           ))}

@@ -8,7 +8,7 @@ export default function SpeedComparison() {
     <section className="py-24 px-6 bg-black">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-semibold mb-4 text-center" style={{
-          background: 'linear-gradient(to right, #ef4444, #eab308)',
+          background: 'linear-gradient(to right, #22d3ee, #3b82f6)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text'
@@ -26,14 +26,14 @@ export default function SpeedComparison() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-zinc-900 border border-yellow-500/30 rounded-lg p-8 relative overflow-hidden md:order-2"
+            className="bg-zinc-900 border border-emerald-500/30 rounded-lg p-8 relative overflow-hidden md:order-2"
           >
-            <div className="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded">
+            <div className="absolute top-2 right-2 bg-emerald-500 text-black text-xs font-bold px-2 py-1 rounded">
               OUR SITES
             </div>
 
             <div className="flex items-center gap-3 mb-4">
-              <Zap size={32} className="text-yellow-500" />
+              <Zap size={32} className="text-emerald-400" />
               <h3 className="text-xl font-semibold text-white">JYT Custom Sites</h3>
             </div>
 
@@ -41,11 +41,11 @@ export default function SpeedComparison() {
               <div>
                 <div className="flex justify-between text-sm mb-1">
                   <span className="text-gray-400">Load Time</span>
-                  <span className="text-yellow-400 font-bold">0.9s</span>
+                  <span className="text-emerald-400 font-bold">0.9s</span>
                 </div>
                 <div className="w-full bg-black rounded-full h-3">
                   <motion.div
-                    className="bg-gradient-to-r from-yellow-500 to-yellow-400 h-3 rounded-full"
+                    className="bg-gradient-to-r from-emerald-500 to-cyan-400 h-3 rounded-full"
                     initial={{ width: 0 }}
                     whileInView={{ width: "18%" }}
                     viewport={{ once: true }}
@@ -57,11 +57,11 @@ export default function SpeedComparison() {
               <div>
                 <div className="flex justify-between text-sm mb-1">
                   <span className="text-gray-400">Page Size</span>
-                  <span className="text-yellow-400 font-bold">450 KB</span>
+                  <span className="text-emerald-400 font-bold">450 KB</span>
                 </div>
                 <div className="w-full bg-black rounded-full h-3">
                   <motion.div
-                    className="bg-gradient-to-r from-yellow-500 to-yellow-400 h-3 rounded-full"
+                    className="bg-gradient-to-r from-emerald-500 to-cyan-400 h-3 rounded-full"
                     initial={{ width: 0 }}
                     whileInView={{ width: "14%" }}
                     viewport={{ once: true }}
@@ -73,11 +73,11 @@ export default function SpeedComparison() {
               <div>
                 <div className="flex justify-between text-sm mb-1">
                   <span className="text-gray-400">Performance Score</span>
-                  <span className="text-yellow-400 font-bold">98/100</span>
+                  <span className="text-emerald-400 font-bold">98/100</span>
                 </div>
                 <div className="w-full bg-black rounded-full h-3">
                   <motion.div
-                    className="bg-gradient-to-r from-yellow-500 to-yellow-400 h-3 rounded-full"
+                    className="bg-gradient-to-r from-emerald-500 to-cyan-400 h-3 rounded-full"
                     initial={{ width: 0 }}
                     whileInView={{ width: "98%" }}
                     viewport={{ once: true }}
@@ -164,7 +164,7 @@ export default function SpeedComparison() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 text-center bg-gradient-to-r from-yellow-500/10 to-red-500/10 border border-yellow-500/20 rounded-lg p-6"
+          className="mt-12 text-center bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 border border-emerald-500/20 rounded-lg p-6"
         >
           <p className="text-white text-lg font-semibold mb-2">
             5x Faster Load Times = More Conversions

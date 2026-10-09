@@ -30,14 +30,14 @@ export const Navigation: React.FC = () => {
           <div className="flex justify-between gap-8">
             <Link
               href="/about"
-              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text xs:from-red-500 xs:to-yellow-500 xs:hover:text-yellow-500 sm:from-red-500 sm:to-yellow-500 sm:hover:text-yellow-300 md:from-red-500 md:to-yellow-500 md:hover:text-yellow-300"
+              className="text-sm font-semibold text-center bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text hover:from-cyan-300 hover:to-blue-400"
             >
               About
             </Link>
 
             <Link
               href="/contact"
-              className="text-sm font-semibold text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent hover:text-red-500 bg-clip-text xs:from-red-500 xs:to-yellow-500 xs:hover:text-yellow-300 sm:from-red-500 sm:to-yellow-500 sm:hover:text-yellow-300 md:from-red-500 md:to-yellow-500 md:hover:text-yellow-300"
+              className="text-sm font-semibold text-center bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text hover:from-cyan-300 hover:to-blue-400"
             >
               Contact
             </Link>
@@ -45,7 +45,7 @@ export const Navigation: React.FC = () => {
 
           <Link
             href="/"
-            className="duration-200 text-red-500 hover:text-yellow-500"
+            className="duration-200 text-cyan-400 hover:text-blue-400"
           >
             <Home className="w-8 h-8 " />
           </Link>

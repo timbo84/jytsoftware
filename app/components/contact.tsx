@@ -84,7 +84,7 @@ export default function ContactPage() {
 
       {/* Intro Section */}
       <div className="text-center py-16 px-6 mt-6">
-        <h1 className="text-4xl font-bold tracking-tight text-white bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">
+        <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
           Let’s Connect!
         </h1>
         <p className="mt-4 text-lg text-zinc-400">
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
                   aria-hidden="true"
                 />
-                <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-yellow-500 group-hover:scale-110 transition-transform">
+                <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-cyan-400 group-hover:scale-110 transition-transform">
                   {s.icon}
                 </span>
                 <div className="z-10 flex flex-col items-center">
@@ -134,26 +134,26 @@ export default function ContactPage() {
             type="text"
             name="name"
             placeholder="Your Name"
-            className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
             required
           />
           <input
             type="email"
             name="email"
             placeholder="Your Email"
-            className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
             required
           />
           <textarea
             name="message"
             placeholder="Your Message"
             rows={4}
-            className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="bg-zinc-800 text-white py-3 px-4 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
             required
           ></textarea>
           <button
             type="submit"
-            className="bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-700 hover:to-yellow-700 text-white font-bold py-3 px-6 rounded shadow-md"
+            className="bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-600 hover:to-amber-500 text-white font-bold py-3 px-6 rounded shadow-md"
           >
             Send Message
           </button>

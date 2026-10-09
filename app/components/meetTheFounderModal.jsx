@@ -26,13 +26,13 @@ export default function MeetFounderModal({ isOpen, onClose }) {
         <div className="bg-zinc-900 text-white rounded-lg p-6 shadow-lg max-w-3xl w-full space-y-6 relative">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white hover:text-yellow-400 text-xl font-bold"
+            className="absolute top-4 right-4 text-white hover:text-cyan-400 text-xl font-bold"
           >
             X
           </button>
           <button
             onClick={onClose}
-            className="sm:hidden bg-red-500 text-white p-2 rounded-full hover:bg-yellow-400 transition duration-300"
+            className="sm:hidden bg-zinc-800 text-white p-2 rounded-full hover:bg-cyan-500 transition duration-300"
           >
             ← Back
           </button>

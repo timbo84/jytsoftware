@@ -9,7 +9,7 @@ const offers = [
     description:
       "May include (but not limited to): Personalized design consultation, Responsive and mobile-friendly layout, SEO-optimized portfolio pages, Integration with social media platforms, Basic analytics setup.",
     href: "mailto:timothy.roberts@jytsoftware.com?subject=Portfolio%20Website%20Inquiry",
-    gradient: "from-orange-500 to-red-500",
+    gradient: "from-orange-500 to-amber-400",
   },
   {
     title: "Basic Website",
@@ -19,7 +19,7 @@ const offers = [
     description:
       "May include (but not limited to): User-friendly content management system (CMS), SSL certificate for enhanced security, Custom email setup with your domain, Basic on-page SEO, Initial content setup.",
     href: "mailto:timothy.roberts@jytsoftware.com?subject=Basic%20Website%20Inquiry",
-    gradient: "from-red-500 to-yellow-500",
+    gradient: "from-cyan-500 to-blue-500",
   },
   {
     title: "Custom Website",
@@ -29,7 +29,7 @@ const offers = [
     description:
       "May include (but not limited to): Tailored user experience design, Advanced interactivity and animations, E-commerce integration, Custom blog design and setup.",
     href: "mailto:timothy.roberts@jytsoftware.com?subject=Custom%20Website%20Inquiry",
-    gradient: "from-orange-500 to-red-500",
+    gradient: "from-emerald-500 to-cyan-500",
   },
   {
     title: "Premium Website",
@@ -39,7 +39,7 @@ const offers = [
     description:
       "May include (but not limited to): Premium design, Advanced SEO optimization, Comprehensive analytics and reporting, Custom API integrations, Priority support and maintenance.",
     href: "mailto:timothy.roberts@jytsoftware.com?subject=Premium%20Website%20Inquiry",
-    gradient: "from-red-500 to-yellow-500",
+    gradient: "from-blue-500 to-indigo-500",
   },
   {
     title: "Business Website",
@@ -49,7 +49,7 @@ const offers = [
     description:
       "May include (but not limited to): Business design, 24/7 support, Custom database solutions, In-depth market research and competitive analysis, Custom CRM integration, Full branding package (logo, business cards, letterheads).",
     href: "mailto:timothy.roberts@jytsoftware.com?subject=Business%20Website%20Inquiry",
-    gradient: "from-orange-500 to-red-500",
+    gradient: "from-orange-500 to-amber-400",
   },
 ];
 

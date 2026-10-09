@@ -10,7 +10,7 @@ export default function Footer() {
         
         {/* About Section */}
         <div className="text-center sm:text-left">
-          <h4 className="text-yellow-400 font-bold text-xl">JYT Software</h4>
+          <h4 className="text-cyan-400 font-bold text-xl">JYT Software</h4>
           <p className="mt-2 text-sm">
             Empowering businesses with innovative web solutions. Jumpstart Your Tomorrow.
           </p>
@@ -18,10 +18,10 @@ export default function Footer() {
 
         {/* Quick Links */}
         <nav className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
-      <a href="/about" className="hover:text-yellow-400 transition duration-300">About Us</a>
-      <a href="/privacy-policy" className="hover:text-yellow-400 transition duration-300">Privacy Policy</a>
-      <a href="/terms-of-use" className="hover:text-yellow-400 transition duration-300">Terms of Use</a>
-      <a href="/contact" className="hover:text-yellow-400 transition duration-300">Contact</a>
+      <a href="/about" className="hover:text-cyan-400 transition duration-300">About Us</a>
+      <a href="/privacy-policy" className="hover:text-cyan-400 transition duration-300">Privacy Policy</a>
+      <a href="/terms-of-use" className="hover:text-cyan-400 transition duration-300">Terms of Use</a>
+      <a href="/contact" className="hover:text-cyan-400 transition duration-300">Contact</a>
     </nav>
 
 
@@ -31,7 +31,7 @@ export default function Footer() {
             href="https://www.facebook.com/profile.php?id=61559267145709&mibextid=ZbWKwL"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-yellow-400 transition duration-300"
+            className="hover:text-cyan-400 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
             <Facebook size={24} />
@@ -40,7 +40,7 @@ export default function Footer() {
             href="https://www.linkedin.com/company/jyt-software-development-designs"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-yellow-400 transition duration-300"
+            className="hover:text-cyan-400 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
             <Linkedin size={24} />
@@ -49,14 +49,14 @@ export default function Footer() {
             href="https://instagram.com/jytsoftware"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-yellow-400 transition duration-300"
+            className="hover:text-cyan-400 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
             <Instagram size={24} />
           </motion.a>
           <motion.a
             href="mailto:timothy.roberts@jytsoftware.com"
-            className="hover:text-yellow-400 transition duration-300"
+            className="hover:text-cyan-400 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
             <Mail size={24} />

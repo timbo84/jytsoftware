@@ -32,7 +32,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="px-6 pt-16 mx-auto max-w-7xl text-center lg:px-8 xs:space-y-16 xs:pt-24 mt-4 sm:space-y-16 sm:pt-24 md:space-y-16 md:pt-24 lg:space-y-16 lg:pt-24">
         <motion.h1
-          className="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text xs:from-red-500 xs:to-yellow-500 sm:from-red-500 sm:to-yellow-500 md:from-red-500 md:to-yellow-500"
+          className="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -78,7 +78,7 @@ export default function AboutPage() {
       {/* Founders Section */}
       <div className="px-6 mx-auto max-w-7xl">
         <motion.h2
-          className="text-3xl font-bold tracking-tight sm:text-4xl text-center bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text"
+          className="text-3xl font-bold tracking-tight sm:text-4xl text-center bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -93,12 +93,12 @@ export default function AboutPage() {
             height={500}
             className="rounded"
           />
-          <h3 className="text-xl font-bold text-yellow-400 mt-4">{founders[0].name}</h3>
+          <h3 className="text-xl font-bold text-cyan-400 mt-4">{founders[0].name}</h3>
           <p className="text-sm text-zinc-400">{founders[0].label}</p>
           <p className="text-sm text-center mt-2 text-zinc-300">{founders[0].bio}</p>
           <button
             onClick={openModal}
-            className="mt-4 bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-700 hover:to-yellow-700 text-white font-bold py-2 px-4 rounded shadow-md"
+            className="mt-4 bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-600 hover:to-amber-500 text-white font-bold py-2 px-4 rounded shadow-md"
           >
             Learn About the Founder
           </button>
@@ -108,7 +108,7 @@ export default function AboutPage() {
       {/* Call-To-Action */}
       <div className="flex justify-center items-center pt-12">
         <motion.button
-          className="bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-700 hover:to-yellow-700 text-white font-bold py-2 px-4 rounded shadow-md"
+          className="bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-600 hover:to-amber-500 text-white font-bold py-2 px-4 rounded shadow-md"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >

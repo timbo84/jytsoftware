@@ -16,6 +16,13 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
+const brandGradientText = {
+  background: "linear-gradient(to right, #22d3ee, #3b82f6)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  backgroundClip: "text",
+} as const;
+
 const socials = [
   {
     icon: <Facebook size={36} />,
@@ -42,7 +49,9 @@ export default function Home() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const logoSize = windowWidth <= 992 ? 50 : 125;
+  const markAspect = 1499 / 716;
+  const navLogoHeight = windowWidth <= 992 ? 36 : 56;
+  const navLogoWidth = Math.round(navLogoHeight * markAspect);
 
   return (
     <div className="min-h-screen bg-black">
@@ -62,69 +71,59 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50 z-0"></div>
 
         {/* Navigation Bar */}
-        <nav className="mb-16 animate-fade-in relative z-10">
-          {/* <Image
-            src="/newJYT.png"
-            alt="jyt logo"
-            width={logoSize}
-            height={logoSize}
-          /> */}
-          <ul className="flex items-center justify-center gap-6 mt-4">
-            {navigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-lg font-semibold text-center px-4 py-2"
-                style={{
-                  background: 'linear-gradient(to right, #ef4444, #eab308)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
-                }}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </ul>
+        <nav className="mb-16 animate-fade-in relative z-10 px-6 md:px-12">
+          <div className="flex items-center justify-between">
+            <Image
+              src="/jyt-logo-mark.png"
+              alt="JYT Software logo"
+              width={navLogoWidth}
+              height={navLogoHeight}
+              priority
+            />
+            <ul className="flex items-center gap-6">
+              {navigation.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-lg font-semibold text-center px-4 py-2"
+                  style={brandGradientText}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </ul>
+          </div>
         </nav>
 
         {/* Hero Title */}
         <div className="flex flex-col items-center justify-center flex-grow relative z-10">
-          <h1 className="z-10 text-xl duration-1000 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap" style={{
-            background: '#ffffff',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text'
-          }}>
-            JYT Software
-          </h1>
-          <h1 className="z-10 text-xl duration-1000 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap" style={{
-            background: '#ffffff',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text'
-          }}>
-            Development & Designs
-          </h1>
-
           {/* Logo */}
           <motion.div
-            className="-mt-2"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <Image
-              src="/jytLogo.png"
+              src="/jyt-logo-full.png"
               alt="JYT Software Logo"
-              width={350}
-              height={350}
-              className="rounded-full w-32 h-32 sm:w-48 sm:h-48 md:w-[350px] md:h-[350px]"
+              width={1499}
+              height={846}
+              className="w-72 sm:w-96 md:w-[560px] h-auto"
+              priority
               style={{
-                filter: 'drop-shadow(0 0 20px rgba(234, 179, 8, 0.5))'
+                filter: 'drop-shadow(0 0 25px rgba(56, 189, 248, 0.35))'
               }}
             />
           </motion.div>
+
+          <h1 className="z-10 mt-4 text-sm duration-1000 cursor-default animate-title font-display sm:text-lg md:text-2xl tracking-wide whitespace-nowrap" style={{
+            background: '#ffffff',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>
+            JYT Software Development & Designs
+          </h1>
         </div>
 
         {/* Stronger gradient fade to black at bottom */}
@@ -133,12 +132,7 @@ export default function Home() {
 
       {/* Rest of content with black background */}
       <div className="bg-black text-center animate-fade-in">
-        <h2 className="text-3xl font-semibold" style={{
-          background: 'linear-gradient(to right, #ef4444, #eab308)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
+        <h2 className="text-3xl font-semibold" style={brandGradientText}>
           Custom Websites Built & Maintained for Businesses Nationwide
         </h2>
         <p className="text-m text-white">
@@ -155,7 +149,7 @@ export default function Home() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-yellow-400 transition duration-300"
+              className="text-white hover:text-cyan-300 transition duration-300"
               whileHover={{ scale: 1.2, rotate: 10 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -171,7 +165,7 @@ export default function Home() {
           transition={{ repeat: Infinity, duration: 2 }}
         >
           <a href="/contact">
-            <button className="bg-gradient-to-r from-red-500 to-yellow-500 hover:from-red-700 hover:to-yellow-700 text-white font-bold py-2 px-4 rounded shadow-md">
+            <button className="bg-gradient-to-r from-orange-500 to-amber-400 hover:from-orange-600 hover:to-amber-500 text-white font-bold py-2 px-4 rounded shadow-md">
               Get a Free Website Audit
             </button>
           </a>
@@ -186,12 +180,7 @@ export default function Home() {
         <TestimonialCarousel />
 
         <section className="py-24 px-6 ">
-        <h2 className="text-3xl font-semibold mb-12" style={{
-          background: 'linear-gradient(to right, #ef4444, #eab308)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>What We Do</h2>
+        <h2 className="text-3xl font-semibold mb-12" style={brandGradientText}>What We Do</h2>
 
         <ul className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 text-gray-200">
           <li>• Custom website development</li>
@@ -210,12 +199,7 @@ export default function Home() {
 
 {/* PRICING */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-12" style={{
-          background: 'linear-gradient(to right, #ef4444, #eab308)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
+        <h2 className="text-3xl font-semibold mb-12" style={brandGradientText}>
           Website Packages That Make Sense
         </h2>
 
@@ -237,7 +221,7 @@ export default function Home() {
           </div>
 
           {/* Professional */}
-          <div className="border border-yellow-400 rounded p-8 bg-black">
+          <div className="border border-orange-400 rounded p-8 bg-black">
             <h3 className="text-xl font-semibold mb-2 text-white">
               Professional ⭐
             </h3>
@@ -274,12 +258,7 @@ export default function Home() {
 
         {/* FINAL CTA */}
       <section className="py-24 px-6 text-center">
-        <h2 className="text-3xl font-semibold" style={{
-          background: 'linear-gradient(to right, #ef4444, #eab308)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
+        <h2 className="text-3xl font-semibold" style={brandGradientText}>
           Ready to improve your website?
         </h2>
         <p className="text-gray-200 mb-10">
@@ -289,7 +268,7 @@ export default function Home() {
         <div className="flex justify-center gap-6 flex-wrap">
           <Link
             href="/contact"
-            className="px-6 py-3 rounded bg-gradient-to-r from-red-500 to-yellow-500 font-semibold"
+            className="px-6 py-3 rounded bg-gradient-to-r from-orange-500 to-amber-400 font-semibold"
           >
             Schedule Free Audit
           </Link>
